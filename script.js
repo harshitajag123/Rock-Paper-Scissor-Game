@@ -107,3 +107,5 @@ window.addEventListener('click', function(event) {
     rulesPopup.style.display = 'none';
   }
 });
+
+
