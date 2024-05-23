@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="score-panel">
+            <div class="panel-headings">
+                <h1>ROCK</h1>
+                <h1>Paper</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="scores">
+                <div class="comp-score">
+                    <h3>COMPUTER</h3>
+                    <h3>SCORE</h3>
+                    <h1 id="score1" style="color:#252525;">0</h1>
+                </div>
+                <div class="your-score">
+                    <h3 style="padding: 0px 2vw;">YOUR </h3>
+                    <h3>SCORE</h3>
+                    <h1 id="score2" style="color:#252525;">0</h1>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- triangle of paper rock scissor images starts here  -->
+        <div class="game-rules-container">
+            <div class="game-panel">
+                <div class="rock-scissor-img">
+                    <div class="rock-container">
+                        <a href="gamePage.html">
+                            <img id="rock-img" src="images/rock.png" alt="rock">
+                        </a>
+                        <div class="lines" id="rock-scissor-line"> </div>
+                    </div>
+                    
+                    <div class="scissor-container">
+                        <a href="gamePage.html">
+                            <img id="scissor-img"src="images/scissors.png" alt="Scissor"> 
+                        </a>
+                        <div class="lines" id="scissor-paper-line"></div>
+                    </div>
+                </div>
+                <div class="paper-img">
+                    <div class="paper-container">
+                        <a href="gamePage.html">
+                            <img id="paper-img"src="images/paper.png" alt="paper">
+                        </a>
+                        <div class="lines" id="paper-rock-line"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- rules popup, rules set, close btn and rules btn starts here  -->
+
+            <!-- Add an ID to the Rules button -->
+            <button id="rules-btn" class="rules-button" style="text-align:center;padding:1vw;">Rules</button>
+
+            <!-- Add a hidden div for the popup -->
+            <div id="rules-popup" style="display:none;">
+                
+                <!-- <button class="close close-icon" id="close-text">X</button> -->
+                <div class="popup-content game-rules-panel">
+                    <h1>Game Rules</h1>
+                    <div class="rules-list">
+                        <ul style="list-style-type:square;">
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+                        </ul>
+                    </div>
+                    <!-- <button class="close close-icon" id="close-text">X</button> -->
+                </div>
+                <div class="close-icon">
+                    <button class="close " id="close-text">X</button>
+                </div>
+                
+            </div>
+        
+            <!-- <div class="rules-popup" style="display:none;">
+                    <div class="game-rules-panel popup-content">
+                        
+                        <div class="game-rules">
+                            <h1 style="text-align:center;">Game Rules</h1>
+                            <div class="rules-list">
+                                <ul style="list-style-type:square;">
+                                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="rules-button">
+                            <button id="rules-btn" style="text-align:center;padding:1vw;">Rules</button>
+                        </div> -->
+                        <!-- <div class="close-icon">
+                            <h1 id="close-text">X</h1>
+                        </div>
+                    </div> 
+                </div> -->
+                <!-- <div class="rules-button">
+                    <button id="rules-btn" style="text-align:center;padding:1vw;">Rules</button>
+                </div> -->
+                <!-- <div class="close-icon">
+                <h1 id="close-text">X</h1>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div id="rules-popup" style="display:none;">
+        <div class="popup-content">
+          <h1>Game Rules</h1>
+          <ul style="list-style-type:square;">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+          </ul>
+          <button class="close">Close</button>
+        </div>
+    </div> -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
